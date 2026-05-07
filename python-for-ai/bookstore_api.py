@@ -117,7 +117,7 @@ def filter_by_rating(min_rating: float = Path(..., ge=1, le=5)):
 # ==================== ROOT ENDPOINT ====================
 @app.get("/")
 def root():
-    """Welcome endpoint"""
+    """Welcome endpoint """
     return {
         "message": "Welcome to Bookstore API",
         "endpoints": {
